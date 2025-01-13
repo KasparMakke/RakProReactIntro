@@ -7,7 +7,7 @@ import Show from "./components/Show"
 import Context from "./components/Context"
 import UserAccount from "./components/UserAccount"
 
-const hobbies = ['Reading', 'Coding', 'Gaming', 'Traveling'];
+const hobbies = ["Reading", "Coding", "Gaming", "Traveling"]
 
 function App() {
   const [show, setShow] = useState(true)
@@ -16,8 +16,11 @@ function App() {
 
   return (
     <>
-      <Counter/>
-      <UserAccount name="Kaspar" hobbies={hobbies}/>
+      <Counter />
+      <UserAccount
+        name="Kaspar"
+        hobbies={hobbies}
+      />
     </>
   )
 }
