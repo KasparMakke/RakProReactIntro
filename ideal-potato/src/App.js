@@ -7,7 +7,6 @@ import Show from "./components/Show"
 import Context from "./components/Context"
 import UserAccount from "./components/UserAccount"
 
-
 const hobbies = ['Reading', 'Coding', 'Gaming', 'Traveling'];
 
 function App() {
@@ -17,6 +16,7 @@ function App() {
 
   return (
     <>
+      <Counter/>
       <UserAccount name="Kaspar" hobbies={hobbies}/>
     </>
   )
