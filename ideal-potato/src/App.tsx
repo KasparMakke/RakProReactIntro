@@ -1,10 +1,6 @@
 import React, { useState } from "react"
 import "./App.css"
-import Name from "./components/Name"
-import Counter from "./components/Counter"
-import PropDrilling from "./components/PropDrilling"
-import Show from "./components/Show"
-import Context from "./components/Context"
+import Counter from './components/Counter'
 import UserAccount from "./components/UserAccount"
 
 const hobbies = ["Reading", "Coding", "Gaming", "Traveling"]

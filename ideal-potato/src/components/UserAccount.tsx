@@ -1,7 +1,12 @@
 import React from 'react';
 import '../styles/UserAccount.css';
 
-const UserAccount = ({ name, hobbies }) => {
+interface UserAccountProps {
+  name: string; // Name should be a string
+  hobbies: string[]; // Hobbies should be an array of strings
+}
+
+const UserAccount: React.FC<UserAccountProps> = ({ name, hobbies }) => {
   return (
     <div className="container">
       {/* Display the name */}

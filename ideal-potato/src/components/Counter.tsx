@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
-const Counter = () => {
+const Counter: React.FC = () => {
   const [counter, setCounter] = useState(0);
 
-  const modifyCounter = (amount) => setCounter((prevCounter) => prevCounter + amount);
+  const modifyCounter = (amount: number) => setCounter((prevCounter) => prevCounter + amount);
 
   return (
     <>
