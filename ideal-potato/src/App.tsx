@@ -1,24 +1,28 @@
-import React, { useState } from "react"
 import "./App.css"
-import Counter from './components/Counter'
-import UserAccount from "./components/UserAccount"
+import Header from './components/Header';
+import { BrowserRouter as Router, Routes, Route, Outlet } from 'react-router-dom';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Profile from './pages/Profile';
+import { Box } from '@mui/material';
 
-const hobbies = ["Reading", "Coding", "Gaming", "Traveling"]
 
 function App() {
-  const [show, setShow] = useState(true)
-
-  const toggleShow = () => setShow(prevShow => !prevShow)
-
   return (
     <>
-      <Counter />
-      <UserAccount
-        name="Kaspar"
-        hobbies={hobbies}
-      />
+      <Router>
+        <Header />
+        <Box sx={{ p: 2 }}>
+          <Outlet />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </Box>
+      </Router>
     </>
   )
 }
 
-export default App
+export default App;
