@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/KasparMakke/RakProReactIntro/static/css/main.1484331f.css",
+    "main.js": "/KasparMakke/RakProReactIntro/static/js/main.0b7c2d63.js",
+    "static/js/453.c159a508.chunk.js": "/KasparMakke/RakProReactIntro/static/js/453.c159a508.chunk.js",
+    "index.html": "/KasparMakke/RakProReactIntro/index.html",
+    "main.1484331f.css.map": "/KasparMakke/RakProReactIntro/static/css/main.1484331f.css.map",
+    "main.0b7c2d63.js.map": "/KasparMakke/RakProReactIntro/static/js/main.0b7c2d63.js.map",
+    "453.c159a508.chunk.js.map": "/KasparMakke/RakProReactIntro/static/js/453.c159a508.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1484331f.css",
+    "static/js/main.0b7c2d63.js"
+  ]
+}
